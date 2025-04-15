@@ -1,5 +1,13 @@
 # 環境変数の説明
 
+{% hint style="warning" %}
+このドキュメントは最新でない可能性があります。最新の構成ファイルをご参照ください：
+
+- [docker-compose.yaml](https://github.com/langgenius/dify/blob/5f8d20b5b2bb51f19547467167b18d9c0f6ffbb8/docker/docker-compose.yaml)
+
+- [.env.example](https://github.com/langgenius/dify/blob/5f8d20b5b2bb51f19547467167b18d9c0f6ffbb8/docker/.env.example)
+{% endhint %}
+
 ### 公共変数
 
 #### CONSOLE\_API\_URL
@@ -234,6 +242,10 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
     *   azure-blob
 
         Azure Blobストレージ。この場合、以下のAZURE_BLOB\_ プレフィックスを設定する必要があります。
+    
+    *   aliyun-oss
+    
+        Alibaba Cloud OSS オブジェクト ストレージ。 このオプションが選択されている場合は、次の ALIYUN_OSS\_ という接頭辞が付いた構成を設定する必要があります。
 
     *   huawei-obs
 
@@ -280,6 +292,9 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
     * `tidb_vector`
     * `analyticdb`
     * `couchbase`
+    * `oceanbase`
+    * `tablestore`
+
 *   WEAVIATE\_ENDPOINT
 
     Weaviateエンドポイントアドレス（例：`http://weaviate:8080`）。
@@ -398,6 +413,50 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 *   COUCHBASE_SCOPE_NAME
 
     使用するスコープの名前です。
+
+*   OCEANBASE\_VECTOR\_HOST
+
+    OceanBase Vector ホスト。
+
+*   OCEANBASE\_VECTOR\_PORT
+
+    OceanBase Vector ポート。
+
+*   OCEANBASE\_VECTOR\_USER
+
+    OceanBase Vector ユーザー名。
+
+*   OCEANBASE\_VECTOR\_PASSWORD
+
+    OceanBase Vector パスワード。
+
+*   OCEANBASE\_VECTOR\_DATABASE
+
+    OceanBase Vector データベース名。
+
+*   OCEANBASE\_CLUSTER\_NAME
+
+    OceanBase クラスタ名，Docker デプロイメントのみ。
+
+*   OCEANBASE\_MEMORY\_LIMIT
+
+    OceanBase メモリ使用上限，Docker デプロイメントのみ。
+
+*   TABLESTORE\_ENDPOINT
+
+    TablestoreのアクセスEndpoint。
+
+*   TABLESTORE\_INSTANCE\_NAME
+
+    Tablestoreのアクセスインスタンス名。
+
+*   TABLESTORE\_ACCESS\_KEY\_ID
+
+    TablestoreのアクセスID。
+
+*   TABLESTORE\_ACCESS\_KEY\_SECRET
+
+    Tablestoreのアクセスキー。
 
 #### ナレッジベース設定
 

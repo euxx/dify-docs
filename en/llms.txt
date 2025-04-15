@@ -899,7 +899,7 @@ Sync Webpages as knowledge bases.
 
 Vector Databases Supported
 
-Qdrant (recommended), Weaviate，Zilliz/Milvus, Pgvector, Pgvector-rs，Chroma, OpenSearch, TiDB, Tencent Vector, Oracle, Relyt, Analyticdb, Couchbase
+Qdrant (recommended), Weaviate，Zilliz/Milvus, Pgvector, Pgvector-rs，Chroma, OpenSearch, TiDB, Tencent Vector, Oracle, Relyt, Analyticdb, Couchbase, OceanBase, Tablestore
 
 Agent Technologies
 
@@ -2012,7 +2012,7 @@ Dify 依赖以下工具和库：
 
 - [npm](https://www.npmjs.com/) version 8.x.x or [Yarn](https://yarnpkg.com/)
 
-- [Python](https://www.python.org/) version 3.10.x
+- [Python](https://www.python.org/) version 3.11.x
 
 
 ### [Direct link to heading](\#id-4.-an-zhuang)    4\. 安装
@@ -2461,7 +2461,7 @@ LLM 可以用于起草电子邮件、社交媒体更新和其他形式的沟通�
 
 ### [Direct link to heading](\#ru-he-kai-shi)    如何开始
 
-- 从一个空白的工作流开始构建或者使用系统模版帮助你开始；
+- 从一个空白的工作流开始构建或者使用系统模板帮助你开始；
 
 - 熟悉基础操作，包括在画布上创建节点、连接和配置节点、调试工作流、查看运行历史等；
 
@@ -3879,7 +3879,7 @@ Dify requires the following dependencies to build, make sure they're installed o
 
 - [npm](https://www.npmjs.com/) version 8.x.x or [Yarn](https://yarnpkg.com/)
 
-- [Python](https://www.python.org/) version 3.10.x
+- [Python](https://www.python.org/) version 3.11.x
 
 
 #### [Direct link to heading](\#id-4.-installations)    4\. Installations
@@ -5345,7 +5345,7 @@ Difyは以下のツールとライブラリに依存しています：
 
 - [npm](https://www.npmjs.com/) バージョン 8.x.x もしくは [Yarn](https://yarnpkg.com/)
 
-- [Python](https://www.python.org/) バージョン 3.10.x
+- [Python](https://www.python.org/) バージョン 3.11x
 
 
 ### [Direct link to heading](\#id-4-insutru)    4\. インストール
@@ -6011,7 +6011,7 @@ ETL 技术
 
 向量数据库支持
 
-Qdrant（推荐），Weaviate，Zilliz/Milvus，Pgvector，Pgvector-rs，Chroma，OpenSearch，TiDB，Tencent Vector，Oracle，Relyt，Analyticdb, Couchbase
+Qdrant（推荐），Weaviate，Zilliz/Milvus，Pgvector，Pgvector-rs，Chroma，OpenSearch，TiDB，Tencent Vector，Oracle，Relyt，Analyticdb, Couchbase, OceanBase, Tablestore
 
 Agent 技术
 
@@ -6887,7 +6887,7 @@ TXT、MARKDOWN、PDF、HTML、XLSX、XLS、DOCX、CSV形式の自動的クリー
 
 対応ベクトルデータベース
 
-Qdrant（推奨）、Weaviate、Zilliz/Milvus、Pgvector、Pgvector-rs、Chroma、OpenSearch、TiDB、Tencent Vector、Oracle、Relyt、Analyticdb, Couchbase
+Qdrant（推奨）、Weaviate、Zilliz/Milvus、Pgvector、Pgvector-rs、Chroma、OpenSearch、TiDB、Tencent Vector、Oracle、Relyt、Analyticdb, Couchbase, OceanBase, Tablestore
 
 エージェント技術
 

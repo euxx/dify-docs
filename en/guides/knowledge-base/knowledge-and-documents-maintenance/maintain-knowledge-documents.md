@@ -51,7 +51,7 @@ You can quickly view all enabled or disabled documents using the filter.
 
 <figure><img src="https://assets-docs.dify.ai/2025/01/47ef07319175a102bfd1692dcc6cac9b.png" alt=""><figcaption><p>Filter text chunks</p></figcaption></figure>
 
-Different [chunking modes](../create-knowledge-and-upload-documents/2.-choose-a-chunk-mode.md) correspond to different text chunking preview methods:
+Different [chunking modes](../create-knowledge-and-upload-documents/chunking-and-cleaning-text.md) correspond to different text chunking preview methods:
 
 {% tabs %}
 {% tab title="General Mode" %}
@@ -235,10 +235,6 @@ Go to **Chunk Settings**, adjust the settings, and click **Save & Process** to s
 
 ***
 
-### Metadata Management
+### Metadata
 
-In addition to capturing metadata (e.g., title, URL, keywords, or a web page description) from various source documents, metadata is also used as structured fields during the chunk retrieval process for filtering or displaying citation sources.
-
-<figure><img src="https://assets-docs.dify.ai/2024/12/f3b1ff4b559ebc40f18b8980b3719fe8.png" alt=""><figcaption><p>Metadata management</p></figcaption></figure>
-
-***
+For more details on metadata, see [_Metadata_](https://docs.dify.ai/guides/knowledge-base/metadata).

@@ -16,7 +16,7 @@ description: 'Author: Yeuoly, Allen'
 
 新的插件系统突破了原有框架的限制，提供更丰富和强大的扩展能力。提供五种类型插件，每一种类型对应成熟的场景解决方案，赋予开发者用无限的创意改造 Dify 应用的空间。
 
-同时，插件系统还具备更加友好的传播属性，你可以通过 [Dify Marketplace](https://marketplace.dify.ai/) 或 [GitHub](publish-plugins/publish-plugin-on-personal-github-repo.md) 以及[本地文件](publish-plugins/package-and-publish-plugin-file.md)的形式分享你的插件，让其他开发者能够便捷地安装插件。
+同时，插件系统还具备更加友好的传播属性，你可以通过 [Dify Marketplace](https://marketplace.dify.ai/) 或 [GitHub](publish-plugins/publish-plugin-on-personal-github-repo.md) 以及[本地文件](publish-plugins/package-plugin-file-and-publish.md)的形式分享你的插件，让其他开发者能够便捷地安装插件。
 
 > Dify Marketplace 是一个面向开发者的开放生态系统，提供模型、工具、AI Agent、Extensions 和插件包等丰富的资源。通过 Marketplace，你可以为现有 Dify 应用无缝接入第三方服务，增强现有应用的能力，共同推动 Dify 生态的发展。
 
@@ -31,7 +31,7 @@ description: 'Author: Yeuoly, Allen'
     各类 AI 模型的接入插件，支持[模型服务商](quick-start/develop-plugins/model-plugin/integrate-the-predefined-model.md)和[自定义模型](quick-start/develop-plugins/model-plugin/customizable-model.md)两种类型，能够极大降低配置和调用 LLM API 的门槛。关于模型插件的开发详情，请参考[快速开始： Model 插件](quick-start/develop-plugins/model-plugin/)。
 *   **Tools（工具）**
 
-    工具指的是能够被 Chatflow / Workflow / Agent 类型应用所调用的第三方服务。提供完整的 API 实现能力，用于增强 Dify 应用的能力。例如开发一个 Google 搜索插件，详情请参考[快速开始：Tool 插件](quick-start/develop-plugins/tool-type-plugin.md)。
+    工具指的是能够被 Chatflow / Workflow / Agent 类型应用所调用的第三方服务。提供完整的 API 实现能力，用于增强 Dify 应用的能力。例如开发一个 Google 搜索插件，详情请参考[快速开始：Tool 插件](quick-start/develop-plugins/tool-plugin.md)。
 *   **Agent 策略**
 
     Agent 策略插件能够定义 [Agent 节点](../guides/workflow/node/agent.md)内部的推理和决策逻辑，包括 LLM 对于工具选择、调用以及对返回结果的处理逻辑。关于更多开发指引，请参考[快速开始： Agent 策略插件](quick-start/develop-plugins/agent-strategy-plugin.md)。

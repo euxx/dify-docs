@@ -242,7 +242,7 @@ pricing:
 
 ```bash
 INSTALL_METHOD=remote
-REMOTE_INSTALL_HOST=remote-url
+REMOTE_INSTALL_HOST=remote
 REMOTE_INSTALL_PORT=5003
 REMOTE_INSTALL_KEY=****-****-****-****-****
 ```
@@ -257,7 +257,7 @@ REMOTE_INSTALL_KEY=****-****-****-****-****
 
 ### プラグインの公開
 
-作成したプラグインを[Dify Pluginsコードリポジトリ](https://github.com/langgenius/dify-plugins)にアップロードして公開できます。アップロードする前に、プラグインが[プラグイン公開仕様](https://docs.dify.ai/zh-hans/plugins/publish-plugins/publish-to-dify-marketplace)に準拠していることを確認してください。審査に合格すると、コードがメインブランチにマージされ、[Dify Marketplace](https://marketplace.dify.ai/)に自動的に公開されます。
+作成したプラグインを[Dify Pluginsコードリポジトリ](https://github.com/langgenius/dify-plugins)にアップロードして公開できます。アップロードする前に、プラグインが[プラグイン公開仕様](https://docs.dify.ai/ja-jp/plugins/publish-plugins/publish-to-dify-marketplace)に準拠していることを確認してください。審査に合格すると、コードがメインブランチにマージされ、[Dify Marketplace](https://marketplace.dify.ai/)に自動的に公開されます。
 
 #### さらに詳しく
 

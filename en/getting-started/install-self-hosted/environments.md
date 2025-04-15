@@ -1,5 +1,13 @@
 # Environments
 
+{% hint style="warning" %}
+This document may be outdated. Please refer to the latest configuration files:
+
+- [docker-compose.yaml](https://github.com/langgenius/dify/blob/5f8d20b5b2bb51f19547467167b18d9c0f6ffbb8/docker/docker-compose.yaml)
+  
+- [.env.example](https://github.com/langgenius/dify/blob/5f8d20b5b2bb51f19547467167b18d9c0f6ffbb8/docker/.env.example)
+{% endhint %}
+
 ### Common Variables
 
 #### CONSOLE_API_URL
@@ -228,6 +236,9 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
   - azure-blob
 
     Azure Blob object storage, if this option is selected, the following AZURE_BLOB\_ prefixed configurations need to be set.
+  - aliyun-oss
+  
+    Alibaba Cloud OSS object storage, if this option is selected, the following ALIYUN_OSS\_ prefixed configurations need to be set.
 
   - huawei-obs
 
@@ -281,6 +292,9 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
     - `pinecone` (not yet open)
     - `analyticdb`
     - `couchbase`
+    - `oceanbase`
+    - `tablestore`
+
 - WEAVIATE_ENDPOINT
 
   Weaviate endpoint address, such as: `http://weaviate:8080`.
@@ -406,6 +420,50 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 - COUCHBASE_SCOPE_NAME
     
   The name of the scope to use.
+
+- OCEANBASE_VECTOR_HOST
+
+  The hostname or IP address of OceanBase vector database.
+
+- OCEANBASE_VECTOR_PORT
+
+  The port of OceanBase vector database.
+
+- OCEANBASE_VECTOR_USER 
+
+  The username of OceanBase vector database.
+
+- OCEANBASE_VECTOR_PASSWORD
+
+  The password of OceanBase vector database user.
+
+- OCEANBASE_VECTOR_DATABASE
+
+  The database name of OceanBase vector database.
+
+- OCEANBASE_CLUSTER_NAME
+
+  The cluster name of OceanBase vector database, only available for Docker deployment.
+
+- OCEANBASE_MEMORY_LIMIT
+
+  The memory limit of OceanBase vector database, only available for Docker deployment.
+
+- TABLESTORE_ENDPOINT 
+
+  The endpoint address of the TableStore server (e.g. 'https://instance-name.cn-hangzhou.ots.aliyuncs.com')
+
+- TABLESTORE_INSTANCE_NAME
+
+  The instance name to access TableStore server (e.g. 'instance-name')
+
+- TABLESTORE_ACCESS_KEY_ID
+
+  The accessKey id for the instance name
+
+- TABLESTORE_ACCESS_KEY_SECRET
+
+  The accessKey secret for the instance name
 
 #### Knowledge Configuration
 

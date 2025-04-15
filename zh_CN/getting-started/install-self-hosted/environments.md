@@ -1,5 +1,13 @@
 # 环境变量说明
 
+{% hint style="warning" %}
+本文档可能未及时更新，请优先参考最新的配置文件：
+
+- [docker-compose.yaml](https://github.com/langgenius/dify/blob/5f8d20b5b2bb51f19547467167b18d9c0f6ffbb8/docker/docker-compose.yaml)
+
+- [.env.example](https://github.com/langgenius/dify/blob/5f8d20b5b2bb51f19547467167b18d9c0f6ffbb8/docker/.env.example)
+{% endhint %}
+
 ### 公共变量
 
 #### CONSOLE\_API\_URL
@@ -51,7 +59,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### SECRET\_KEY
 
-一个用于安全地签名会话 cookie 并在数据库上加密敏感信息的密钥。初次启动需要设置改变量。可以运行 `openssl rand -base64 42` 生成一个强密钥。
+一个用于安全地签名会话 cookie 并在数据库上加密敏感信息的密钥。初次启动需要设置该变量。可以运行 `openssl rand -base64 42` 生成一个强密钥。
 
 #### DEPLOY\_ENV
 
@@ -216,6 +224,9 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     *   azure-blob
 
         Azure Blob 存储，若选择此项则需要设置下方 AZURE\_BLOB\_ 开头的配置。
+    *   aliyun-oss
+
+        阿里云 OSS 存储，若选择此项则需要设置下方 ALIYUN\_OSS\_ 开头的配置。
     *   huawei-obs
 
         Huawei OBS 存储，若选择此项则需要设置下方 HUAWEI\_OBS\_ 开头的配置。
@@ -266,6 +277,9 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     * `tidb_vector`
     * `analyticdb`
     * `couchbase`
+    * `oceanbase`
+    * `tablestore`
+
 *   WEAVIATE\_ENDPOINT
 
     Weaviate 端点地址，如：`http://weaviate:8080`。
@@ -389,11 +403,56 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
      Scope 名称。
 
+*   OCEANBASE\_VECTOR\_HOST
+
+    OceanBase Vector 数据库的 Host。
+
+*   OCEANBASE\_VECTOR\_PORT
+
+    OceanBase Vector 数据库的端口。
+
+*   OCEANBASE\_VECTOR\_USER
+
+    OceanBase Vector 数据库的用户名。
+
+*   OCEANBASE\_VECTOR\_PASSWORD
+
+    OceanBase Vector 数据库的密码。
+
+*   OCEANBASE\_VECTOR\_DATABASE
+
+    OceanBase Vector 数据库的库名。
+
+*   OCEANBASE\_CLUSTER\_NAME
+
+    OceanBase 集群名，仅用于 Docker 部署。
+
+*   OCEANBASE\_MEMORY\_LIMIT
+
+    OceanBase 内存使用上限，仅用于 Docker 部署。
+
+*   TABLESTORE\_ENDPOINT
+
+    Tablestore 访问 Endpoint。
+
+*   TABLESTORE\_INSTANCE\_NAME
+
+    Tablestore 访问实例名。
+
+*   TABLESTORE\_ACCESS\_KEY\_ID
+
+    Tablestore 访问 ID。
+
+*   TABLESTORE\_ACCESS\_KEY\_SECRET
+
+    Tablestore 访问密钥。
+
 #### 知识库配置
 
 *   UPLOAD\_FILE\_SIZE\_LIMIT
 
-    上传文件大小限制，默认 15M。
+    上传文件大小限制，默认 15M
+    
 *   UPLOAD\_FILE\_BATCH\_LIMIT
 
     每次上传文件数上限，默认 5 个。

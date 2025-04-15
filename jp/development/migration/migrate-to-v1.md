@@ -35,8 +35,10 @@ tar -cvf volumes-$(date +%s).tgz volumes
 `v1.0.0` は Docker Compose を使用してデプロイできます。`cd` コマンドで Dify プロジェクトのパスに移動し、以下のコマンドで Dify のバージョンをアップグレードします：
 
 ```bash
+git fetch origin
 git checkout 1.0.0 # 1.0.0 ブランチに切り替える
 cd docker
+nano .env # .env.example ファイルと同期するように環境構成ファイルを変更する
 docker compose -f docker-compose.yaml up -d
 ```
 
@@ -72,7 +74,20 @@ poetry run flask extract-plugins --workers=20
 poetry run flask install-plugins --workers=2
 ```
 
-このコマンドは、最新のコミュニティ版に必要なすべてのプラグインをダウンロードしてインストールします。ターミナルに `Install plugins completed.` と表示されたら、移行は完了です。
+このコマンドは、最新のコミュニティ版に必要なすべてのプラグインをダウンロードしてインストールします。
+
+最後に、プラグインのデータを移行します。このコマンドは `provider name` を更新し、`langgenius/{provider_name}/{provider_name}` を追加します
+
+```bash
+poetry run flask migrate-data-for-plugin
+```
+
+ターミナルに結果が表示されたら、マイグレーションは完了です。
+
+```bash
+Migrate [tool_builtin_providers] data for plugin completed, total: 6
+Migrate data for plugin completed.
+```
 
 ## 移行結果の検証
 

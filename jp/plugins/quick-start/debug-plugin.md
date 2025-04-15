@@ -1,8 +1,10 @@
-## プラグインのデバッグ
+# プラグインのデバッグ
 
 プラグインの開発が完了したら、次は正常に動作するかどうかをテストしましょう。Difyはリモートデバッグ機能を提供しており、「プラグイン管理」ページでデバッグキーとリモートサーバーアドレスを取得できます。
 
-<figure><img src="https://assets-docs.dify.ai/2024/11/1cf15bc59ea10eb67513c8bdca557111.png" alt=""><figcaption></figcaption></figure>
+リモートサーバーのアドレスとデバッグキーは、[「プラグイン管理」](https://cloud.dify.ai/plugins)ページにアクセスすることで取得できます。
+
+![](https://assets-docs.dify.ai/2025/04/2779338a43687f3e00155baccdd6d06c.png)
 
 プラグインのプロジェクトに戻り、`.env.example`ファイルをコピーして`.env`にリネームします。そして、取得したリモートサーバーアドレスやデバッグキーなどの情報を入力してください。
 
@@ -10,7 +12,7 @@
 
 ```bash
 INSTALL_METHOD=remote
-REMOTE_INSTALL_HOST=remote-url
+REMOTE_INSTALL_HOST=remote
 REMOTE_INSTALL_PORT=5003
 REMOTE_INSTALL_KEY=****-****-****-****-****
 ```

@@ -14,6 +14,7 @@
   * [环境变量说明](getting-started/install-self-hosted/environments.md)
   * [常见问题](getting-started/install-self-hosted/faq.md)
 * [Dify Premium](getting-started/dify-premium.md)
+* [Dify 教育版](getting-started/dify-for-education.md)
 
 ## 手册 <a href="#guides" id="guides"></a>
 
@@ -53,6 +54,7 @@
     * [工具](guides/workflow/node/tools.md)
     * [结束](guides/workflow/node/end.md)
     * [直接回复](guides/workflow/node/answer.md)
+    * [循环](guides/workflow/node/loop.md)
   * [快捷键](guides/workflow/shortcut-key.md)
   * [编排节点](guides/workflow/orchestrate-node.md)
   * [文件上传](guides/workflow/file-upload.md)
@@ -78,8 +80,10 @@
   * [管理知识库](guides/knowledge-base/knowledge-and-documents-maintenance/README.md)
     * [维护知识库内文档](guides/knowledge-base/knowledge-and-documents-maintenance/maintain-knowledge-documents.md)
     * [通过 API 维护知识库](guides/knowledge-base/knowledge-and-documents-maintenance/maintain-dataset-via-api.md)
+  * [元数据](guides/knowledge-base/metadata.md)
   * [在应用内集成知识库](guides/knowledge-base/integrate-knowledge-within-application.md)
   * [召回测试/引用归属](guides/knowledge-base/retrieval-test-and-citation.md)
+  * [知识库请求频率限制](guides/knowledge-base/knowledge-request-rate-limit.md)
   * [连接外部知识库](guides/knowledge-base/connect-external-knowledge-base.md)
   * [外部知识库 API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [工具](guides/tools/README.md)
@@ -130,6 +134,7 @@
   * [团队成员管理](guides/management/team-members-management.md)
   * [个人账号管理](guides/management/personal-account-management.md)
   * [订阅管理](guides/management/subscription-management.md)
+  * [版本管理](guides/management/version-control.md)
 
 ## 动手实验室 <a href="#workshop" id="workshop"></a>
 
@@ -181,12 +186,15 @@
     * [Node](plugins/schema-definition/reverse-invocation-of-the-dify-service/node.md)
 * [最佳实践](plugins/best-practice/README.md)
   * [开发 Slack Bot 插件](plugins/best-practice/develop-a-slack-bot-plugin.md)
+  * [Dify MCP 插件指南：一键连接 Zapier 并自动发送邮件](plugins/best-practice/how-to-use-mcp-zapier.md)
 * [发布插件](plugins/publish-plugins/README.md)
+  * [自动发布插件](plugins/publish-plugins/plugin-auto-publish-pr.md)
   * [发布至 Dify Marketplace](plugins/publish-plugins/publish-to-dify-marketplace/README.md)
     * [插件开发者准则](plugins/publish-plugins/publish-to-dify-marketplace/plugin-developer-guidelines.md)
     * [插件隐私政策准则](plugins/publish-plugins/publish-to-dify-marketplace/plugin-privacy-protection-guidelines.md)
   * [发布至个人 GitHub 仓库](plugins/publish-plugins/publish-plugin-on-personal-github-repo.md)
   * [本地发布与分享](plugins/publish-plugins/package-plugin-file-and-publish.md)
+  * [第三方签名验证](plugins/publish-plugins/signing-plugins-for-third-party-signature-verification.md)
 * [常见问题](plugins/faq.md)
 
 ## 研发 <a href="#development" id="development"></a>
@@ -226,6 +234,8 @@
   * [如何连接 AWS Bedrock 知识库？](learn-more/use-cases/how-to-connect-aws-bedrock.md)
   * [构建 Dify 应用定时任务助手](learn-more/use-cases/dify-schedule.md)
   * [如何在 Dify 内体验大模型“竞技场”？以 DeepSeek R1 VS o1 为例](learn-more/use-cases/dify-model-arena.md)
+  * [在 Dify 云端构建 AI Thesis Slack Bot](learn-more/use-cases/building-an-ai-thesis-slack-bot.md)
+  * [将 Dify 快速接入 QQ、微信、飞书、钉钉、Telegram、Discord 等平台](learn-more/use-cases/connect-dify-to-various-im-platforms-by-using-langbot.md)
 * [扩展阅读](learn-more/extended-reading/README.md)
   * [什么是 LLMOps？](learn-more/extended-reading/what-is-llmops.md)
   * [什么是数组变量？](learn-more/extended-reading/what-is-array-variable.md)

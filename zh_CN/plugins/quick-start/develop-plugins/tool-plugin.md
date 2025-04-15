@@ -208,7 +208,7 @@ extra:
 * `identity` 包含了工具的基本信息，包括名称、作者、标签、描述等。
 * `parameters` 参数列表
   * `name` （必填）参数名称，唯一，不允许和其他参数重名。
-  * `type` （必填）参数类型，目前支持`string`、`number`、`boolean`、`select`、`secret-input` 五种类型，分别对应字符串、数字、布尔值、下拉框、加密输入框，对于敏感信息，请使用`secret-input`类型。
+  * `type` （必填）参数类型，目前支持`string`、`number`、`boolean`、`select`、`secret-input`、`file`、`files`、`model-selector`、`app-selector` 九种类型，分别对应字符串、数字、布尔值、下拉框、加密输入框、文件、文件集、模型选择、应用选择，对于敏感信息，请使用`secret-input`类型。
   * `label`（必填）参数标签，用于前端展示。
   * `form` （必填）表单类型，目前支持`llm`、`form`两种类型。
     * 在 Agent 应用中，`llm` 表示该参数 LLM 自行推理，`form` 表示要使用该工具可提前设定的参数。
@@ -315,7 +315,7 @@ class GoogleProvider(ToolProvider):
 
 ```bash
 INSTALL_METHOD=remote
-REMOTE_INSTALL_HOST=localhost
+REMOTE_INSTALL_HOST=remote
 REMOTE_INSTALL_PORT=5003
 REMOTE_INSTALL_KEY=****-****-****-****-****
 ```
@@ -328,8 +328,10 @@ REMOTE_INSTALL_KEY=****-****-****-****-****
 
 确认插件能够正常运行后，可以通过以下命令行工具打包并命名插件。运行以后你可以在当前文件夹发现 `google.difypkg` 文件，该文件为最终的插件包。
 
-```
-dify plugin package ./google
+```bash
+# 将 ./google 替换为插件项目的实际路径
+
+dify plugin package ./google 
 ```
 
 恭喜，你已完成一个工具类型插件的完整开发、调试与打包过程！

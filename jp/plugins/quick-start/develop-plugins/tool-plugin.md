@@ -1,4 +1,4 @@
-# Tool プラグイン
+# ツールプラグイン
 
 Tool（ツール）プラグインは、チャットフロー、ワークフロー、エージェントといったアプリタイプから参照できる外部ツールであり、Difyアプリの機能を拡張するために使用されます。例えば、アプリにオンライン検索機能や画像生成機能を追加するといったことが可能です。ツールプラグインは、包括的なツールセットとAPI実装機能を提供します。
 
@@ -224,7 +224,7 @@ extra:
 *   `identity`: ツールの名前、作成者、ラベル、説明といった基本的な情報が含まれます。
 *   `parameters`: パラメータに関する設定項目です。各項目の詳細は以下の通りです。
     *   `name` (必須): パラメータ名。一意である必要があり、他のパラメータ名との重複は許容されません。
-    *   `type` (必須): パラメータの型。`string` (文字列)、`number` (数値)、`boolean` (真偽値)、`select` (選択式ドロップダウン)、`secret-input` (暗号化入力フィールド) の5種類がサポートされています。機密性の高い情報を取り扱う場合は、必ず `secret-input` 型を使用してください。
+    *   `type` (必須): パラメータの型。`string` (文字列)、`number` (数値)、`boolean` (真偽値)、`select` (選択式ドロップダウン)、`secret-input` (暗号化入力フィールド)、`file` (ファイル)、`files` (ファイルセット)、`model-selector` (モデル選択)、`app-selector` (アプリケーション選択) の9種類がサポートされています。機密性の高い情報を取り扱う場合は、必ず `secret-input` 型を使用してください。
     *   `label` (必須): パラメータのラベル。フロントエンドに表示される際に用いられます。
     *   `form` (必須): フォームの種類。`llm` と `form` の2種類がサポートされています。
         *   Agentアプリケーションにおいて、`llm` はパラメータがLLMによって推論されることを意味し、`form` はツールを使用する前にユーザーが設定できるパラメータを意味します。
@@ -329,7 +329,7 @@ class GoogleProvider(ToolProvider):
 
 ```bash
 INSTALL_METHOD=remote
-REMOTE_INSTALL_HOST=localhost
+REMOTE_INSTALL_HOST=remote
 REMOTE_INSTALL_PORT=5003
 REMOTE_INSTALL_KEY=****-****-****-****-****
 ```
@@ -342,7 +342,9 @@ REMOTE_INSTALL_KEY=****-****-****-****-****
 
 プラグインが正常に動作することを確認したら、以下のコマンドラインツールを使用してプラグインをパッケージ化し、名前を付けます。実行後、現在のフォルダに `google.difypkg` ファイルが作成されます。これがプラグインの最終的なパッケージです。
 
-```
+```bash
+# Replace ./google with your actual plugin project path.
+
 dify plugin package ./google
 ```
 
@@ -350,7 +352,7 @@ dify plugin package ./google
 
 ### プラグインの公開
 
-[Dify Plugins コードリポジトリ](https://github.com/langgenius/dify-plugins)にアップロードして、プラグインを公開しましょう。アップロードする前に、プラグインが[プラグイン公開仕様](https://docs.dify.ai/zh-hans/plugins/publish-plugins/publish-to-dify-marketplace)に準拠していることを確認してください。レビューに合格すると、コードはメインブランチにマージされ、[Dify Marketplace](https://marketplace.dify.ai/) に自動的に公開されます。
+[Dify Plugins コードリポジトリ](https://github.com/langgenius/dify-plugins)にアップロードして、プラグインを公開しましょう。アップロードする前に、プラグインが[プラグイン公開仕様](https://docs.dify.ai/ja-jp/plugins/publish-plugins/publish-to-dify-marketplace)に準拠していることを確認してください。レビューに合格すると、コードはメインブランチにマージされ、[Dify Marketplace](https://marketplace.dify.ai/) に自動的に公開されます。
 
 #### さらに詳しく
 

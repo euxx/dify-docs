@@ -1,12 +1,10 @@
 # Debug Plugin
 
-
-
 Once plugin development is complete, the next step is to test whether the plugin runs correctly. Dify provides remote debugging method.
 
 Go to ["Plugin"](https://cloud.dify.ai/plugins) page to get the debugging key and remote URL.
 
-![](https://assets-docs.dify.ai/2024/11/1cf15bc59ea10eb67513c8bdca557111.png)
+![](https://assets-docs.dify.ai/2025/04/2779338a43687f3e00155baccdd6d06c.png)
 
 Go back to the plugin project, copy the `.env.example` file and rename it to `.env`. Fill it with the remote server address and debug key.
 
@@ -14,7 +12,7 @@ Go back to the plugin project, copy the `.env.example` file and rename it to `.e
 
 ```bash
 INSTALL_METHOD=remote
-REMOTE_INSTALL_HOST=remote-url
+REMOTE_INSTALL_HOST=remote
 REMOTE_INSTALL_PORT=5003
 REMOTE_INSTALL_KEY=****-****-****-****-****
 ```

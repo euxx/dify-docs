@@ -208,7 +208,7 @@ extra:
 * `identity` contains the tool's basic information, including name, author, labels, description, etc.
 * `parameters` parameter list
   * `name` (required) parameter name, must be unique, cannot duplicate other parameter names
-  * `type` (required) parameter type, currently supports five types: `string`, `number`, `boolean`, `select`, `secret-input`, corresponding to string, number, boolean, dropdown menu, and encrypted input field. For sensitive information, please use `secret-input` type
+  * `type` (required) parameter type, currently supports nine types: `string`, `number`, `boolean`, `select`, `secret-input`, `file`, `files`, `model-selector`, `app-selector`, corresponding to string, number, boolean, dropdown menu, encrypted input field, file, file set, model selection, and application selection. For sensitive information, please use `secret-input` type
   * `label` (required) parameter label, used for frontend display
   * `form` (required) form type, currently supports two types: `llm` and `form`
     * In Agent applications, `llm` means the parameter is inferred by LLM, `form` means parameters that can be preset to use the tool
@@ -313,7 +313,7 @@ The `.env` file:
 
 ```bash
 INSTALL_METHOD=remote
-REMOTE_INSTALL_HOST=localhost
+REMOTE_INSTALL_HOST=remote
 REMOTE_INSTALL_PORT=5003
 REMOTE_INSTALL_KEY=****-****-****-****-****
 ```
@@ -326,7 +326,9 @@ Run the `python -m main` command to launch the plugin. You can see on the plugin
 
 After confirming that the plugin works properly, you can package and name the plugin with the following command line tool. After running it you can find the `google.difypkg` file in the current folder, which is the final plugin package.
 
-```
+```bash
+# Replace ./google with your actual plugin project path.
+
 dify plugin package ./google
 ```
 

@@ -4,24 +4,24 @@ Steps to upload documents to create a knowledge base:
 
 1. Create a knowledge base and import either local document file or online data.
 
-{% content-ref url="create-knowledge-and-upload-documents/1.-import-text-data/" %}
-[1.-import-text-data](create-knowledge-and-upload-documents/1.-import-text-data/)
+{% content-ref url="create-knowledge-and-upload-documents/import-content-data/" %}
+[import-content-data](create-knowledge-and-upload-documents/import-content-data/)
 {% endcontent-ref %}
 
 2. Choose a chunking mode and preview the spliting results. This stage involves content preprocessing and structuring, where long texts are divided into multiple smaller chunks.
 
-{% content-ref url="create-knowledge-and-upload-documents/2.-choose-a-chunk-mode.md" %}
-[2.-choose-a-chunk-mode.md](create-knowledge-and-upload-documents/2.-choose-a-chunk-mode.md)
+{% content-ref url="create-knowledge-and-upload-documents/chunking-and-cleaning-text.md" %}
+[chunking-and-cleaning-text.md](create-knowledge-and-upload-documents/chunking-and-cleaning-text.md)
 {% endcontent-ref %}
 
 3. Configure the indexing method and retrieval setting. Once the knowledge base receives a user query, it searches existing documents according to preset retrieval methods and extracts highly relevant content chunks.
 
-{% content-ref url="create-knowledge-and-upload-documents/3.-select-the-indexing-method-and-retrieval-setting.md" %}
-[3.-select-the-indexing-method-and-retrieval-setting.md](create-knowledge-and-upload-documents/3.-select-the-indexing-method-and-retrieval-setting.md)
+{% content-ref url="create-knowledge-and-upload-documents/setting-indexing-methods.md" %}
+[setting-indexing-methods.md](create-knowledge-and-upload-documents/setting-indexing-methods.md)
 {% endcontent-ref %}
 
 4. Wait for the chunk embeddings to complete.
-5. Once finished, link the knowledge base to your application and start using it. You can then [integrate it into your application](integrate-knowledge-within-application.md) to build an LLM that are capable of Q\&A based on knowledge-bases. If you want to modify and manage the knowledge base further, take refer to [Knowledge Base and Document Maintenance](knowledge-and-documents-maintenance.md).
+5. Once finished, link the knowledge base to your application and start using it. You can then [integrate it into your application](integrate-knowledge-within-application.md) to build an LLM that are capable of Q\&A based on knowledge-bases. If you want to modify and manage the knowledge base further, take refer to [Knowledge Base and Document Maintenance](knowledge-and-documents-maintenance/).
 
 <figure><img src="https://assets-docs.dify.ai/2024/12/a3362a1cd384cb2b539c9858de555518.png" alt=""><figcaption><p>Complete the creation of the knowledge base</p></figcaption></figure>
 
@@ -50,9 +50,12 @@ Differences in supported file formats for parsing:
 Different ETL solutions may have differences in file extraction effects. For more information on Unstructured ETL’s data processing methods, please refer to the [official documentation](https://docs.unstructured.io/open-source/core-functionality/partitioning).
 {% endhint %}
 
-#### Embedding
+#### **Embedding**
 
 **Embedding** transforms discrete variables (words, sentences, documents) into continuous vector representations, mapping high-dimensional data to lower-dimensional spaces. This technique preserves crucial semantic information while reducing dimensionality, enhancing content retrieval efficiency.
 
 **Embedding models**, specialized large language models, excel at converting text into dense numerical vectors, effectively capturing semantic nuances for improved data processing and analysis.
 
+#### **Metadata**
+
+For managing the knowledge base with metadata, see [_Metadata_](https://docs.dify.ai/guides/knowledge-base/metadata).

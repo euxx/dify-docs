@@ -71,3 +71,5 @@ For detailed instructions, please refer to:
 * **Looking to promote a plugin** → **Recommended to use the Marketplace**, ensuring plugin quality through official review and increasing exposure.
 * **Open-source sharing project** → **Recommended to use GitHub**, convenient for version management and community collaboration.
 * **Quick distribution or internal testing** → **Recommended to use plugin file**, allowing for straightforward and efficient installation and sharing.
+
+> When installing plugins that are not from the Dify Marketplace, you may encounter third-party signature verification issues. For solutions, please refer to [Signing Plugins for Third-Party Signature Verification](./signing-plugins-for-third-party-signature-verification.md).
